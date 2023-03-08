@@ -57,7 +57,7 @@ To do list is a project meant to master my skills in version control, GitHub flo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://kel-nana.github.io/Purple-Coders---HTML-CSS-JavaScript-capstone-project/)
+- [Live Demo Link](https://kel-nana.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 **This is an example of how you may give instructions on setting up your project locally.**
@@ -127,9 +127,7 @@ Share ideas on how to improve this project.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Cindy Shin in Behance](https://www.behance.net/adagio07) on an amazing design.
-
-The design is [MIT] licensed(https://creativecommons.org/licenses/by-nc/4.0/) by Behance and Cindy Shin.
+I would like to thank Microverse documentation and my coding partner
 
 <p align="right">
 
