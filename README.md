@@ -19,6 +19,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -66,23 +67,46 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Git in your local machine
-- Code editor (VS code, Atom, etc)
-- Terminal
+- A web browser (e.g. Mozilla Firefox, Google Chrome etc.)
+- git: This is a version control system used for source code management.
+- A text editor (e.g Visual Studio Code (recommended), Sublime Text, Atom etc.)
+- Live Server: A web extension utility for Visual Studio Code that helps you live reload feature for dynamic pages.
+- Basic knowledge on HTML and CSS.
 
 ### Setup
 
-- git clone git@github.com:Kel-nana/To-Do-list.git
+- With git, clone the code to your machine, or download a ZIP of all the files directly.
+- [Download the ZIP file from this location](https://github.com/Kel-nana/To-Do-list/archive/refs/heads/list-structure.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
-- cd To-Do-list
+```
+git clone git@github.com:Kel-nana/To-Do-list.git
+```
+
+- Once the files are on your machine, open the **TodoList** folder in [Visual Studio Code](https://code.visualstudio.com/download).
+
+- Run `npm install` to install all necessary packages.
 
 ### Usage
 
 - Add the changes you want and feel free to use in your project!
 
+### Install
+
+To install linter run the following command:
+`npm install --save-dev hint@7.x `
+`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+`npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+
 ### Run tests
 
-- Check that all the tests are correctly passed🤝
+To run tests, run the following command:
+`npx hint .`
+`npx stylelint "**/*.{css,scss}"`
+`npx eslint .`
+
+## Deployment
+
+- After opening the files in Visual Studio Code, run `npm run start` to launch the files with Web Dev Server.
 
 ### Merge
 
@@ -102,9 +126,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Customise styling]**
-- [ ] **[add a comment section]**
-
+- [ ] **[Implement complete task indication]**
+- [ ] **[Remove a task]**
+- [ ] **[Clear all completed tasks]**
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
