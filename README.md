@@ -101,8 +101,9 @@ To install linter run the following command:
 ### Run tests
 
 To run tests, run the following command:
-`npx hint .`
-`npx stylelint "**/*.{css,scss}"`
+<br>
+`npx hint .`<br>
+`npx stylelint "**/*.{css,scss}"`<br>
 `npx eslint .`
 
 ## Deployment
