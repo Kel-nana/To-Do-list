@@ -28,9 +28,9 @@
 - [📝 License](#license)
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio: Pop up window
+# 📖 [To do list]
 
-] <a name="about-project"></a>
+<a name="about-project"></a>
 
 To do list is a project meant to master my skills in version control, GitHub flow, webpack and JavaScript.
 
@@ -48,9 +48,9 @@ To do list is a project meant to master my skills in version control, GitHub flo
 
 ### Key Features <a name="key-features"></a>
 
-- **[Pop up window]**
-- **[contact form storage capability]**
-- **[addition of logo rotate on hover]**
+- [ ] **Display To do Lists**
+- [ ] **Add to do list dynamically**
+- [ ] **Add list in the order of their index**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## Getting Started
