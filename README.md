@@ -61,9 +61,6 @@ To do list is a project meant to master my skills in version control, GitHub flo
 - [Live Demo Link](https://kel-nana.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-**This is an example of how you may give instructions on setting up your project locally.**
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -74,6 +71,8 @@ To get a local copy up and running follow these simple example steps.
 - Basic knowledge on HTML and CSS.
 
 ### Setup
+
+To get a local copy up and running follow these simple example steps.
 
 - With git, clone the code to your machine, or download a ZIP of all the files directly.
 - [Download the ZIP file from this location](https://github.com/Kel-nana/To-Do-list/archive/refs/heads/list-structure.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
