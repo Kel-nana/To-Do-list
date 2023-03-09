@@ -1,87 +1,69 @@
+// Select the DOM element with the class 'display'
 export const displayArea = document.querySelector('.display');
 
-export function displayList(toDoData) {
-// Clear the display area
+// Define a function that takes an array of to-do items and displays them on the page
+const displayList = (toDoData) => {
+  // Clear the display area to start with a clean slate
   displayArea.innerHTML = '';
 
-  // Loop through each data in toDoData array
+  // Loop through the to-do items
   toDoData.forEach((data, i) => {
-    // Set the id of each data
+    // Add an ID to each item
     data.id = i + 1;
-    // Create a new list item element
+
+    // Create a new list item element and add the 'added' class to it
     const li = document.createElement('li');
-
-    // Add a class name to the list item
-    li.className = 'added';
-
-    // Append the list item to the display area
+    li.classList.add('added');
+    // Append the new list item to the display area
     displayArea.appendChild(li);
 
-    // Create a new paragraph element
+    // Create a new paragraph element and append it to the list item
     const p = document.createElement('p');
-
-    // Append the paragraph element to the list item
     li.appendChild(p);
 
-    // Create a new checkbox input element
+    // Create a new checkbox element and append it to the paragraph element
     const checkbox = document.createElement('input');
-
-    // Set the type and id of the checkbox
     checkbox.type = 'checkbox';
     checkbox.id = 'checkbox';
-
-    // Append the checkbox to the paragraph element
+    checkbox.classList.add('checkbox');
     p.appendChild(checkbox);
 
-    // Create a new input element for the text content
+    // Create a new input element for the item's text content and append it to the paragraph element
     const textContent = document.createElement('input');
-
-    // Add a class name and set the type and value of the text content input
-    textContent.className = 'input-text';
+    textContent.classList.add('input-text');
     textContent.type = 'text';
     textContent.value = data.description;
-
-    // Set the input as readonly
     textContent.setAttribute('readonly', 'readonly');
-
-    // Append the text content input to the paragraph element
     p.appendChild(textContent);
 
-    // Create a new icon element
+    // Create a new icon element for the item's actions and append it to the list item
     const icon = document.createElement('i');
-
-    // Add a class name to the icon element
-    icon.className = 'fa-solid fa-ellipsis-vertical';
-
-    // Append the icon to the list item
+    icon.classList.add('fa-solid', 'fa-ellipsis-vertical');
     li.appendChild(icon);
   });
 
-  // Check if there are any added list items
-  if (document.querySelectorAll('.added')) {
-    // Get all added list items
-    const added = document.querySelectorAll('.added');
-    // Loop through each added list item
-    added.forEach((el) => {
-    // Add mouseover event listener
-      el.addEventListener('mouseover', () => {
-      // Toggle the hover-list class
-        el.classList.toggle('hover-list');
+  // Select all the list items with the 'added' class
+  const added = document.querySelectorAll('.added');
 
-        // Toggle the classes of the icon element
-        el.children[1].classList.toggle('fa-ellipsis-vertical');
-        el.children[1].classList.toggle('fa-trash-can');
-      });
-
-      // Add mouseout event listener
-      el.addEventListener('mouseout', () => {
-      // Toggle the hover-list class
-        el.classList.toggle('hover-list');
-
-        // Toggle the classes of the icon element
-        el.children[1].classList.toggle('fa-trash-can');
-        el.children[1].classList.toggle('fa-ellipsis-vertical');
-      });
+  // Loop through the list items and add event listeners for mouseover and mouseout events
+  added.forEach((el) => {
+    el.addEventListener('mouseover', () => {
+      // Toggle the 'hover-list' class on the list item
+      el.classList.toggle('hover-list');
+      // Toggle the 'fa-ellipsis-vertical' and 'fa-trash-can' classes on the icon element
+      el.children[1].classList.toggle('fa-ellipsis-vertical');
+      el.children[1].classList.toggle('fa-trash-can');
     });
-  }
-}
+
+    el.addEventListener('mouseout', () => {
+      // Toggle the 'hover-list' class on the list item
+      el.classList.toggle('hover-list');
+      // Toggle the 'fa-ellipsis-vertical' and 'fa-trash-can' classes on the icon element
+      el.children[1].classList.toggle('fa-trash-can');
+      el.children[1].classList.toggle('fa-ellipsis-vertical');
+    });
+  });
+};
+
+// Export the displayList function so it can be used in other modules
+export { displayList };
