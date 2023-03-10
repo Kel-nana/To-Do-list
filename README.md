@@ -58,7 +58,7 @@ To do list is a project meant to master my skills in version control, GitHub flo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://kel-nana.github.io/To-Do-list/)
+- [Live Demo Link](https://kel-nana.github.io/To-Do-list/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
